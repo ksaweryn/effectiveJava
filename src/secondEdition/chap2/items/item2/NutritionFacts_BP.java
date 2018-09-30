@@ -1,4 +1,4 @@
-package secondEditio.items.chap2.item2;
+package secondEdition.chap2.items.item2;
 
 public class NutritionFacts_BP {
     //From item 2 - Java Builder Pattern
@@ -19,6 +19,10 @@ public class NutritionFacts_BP {
         private int fat = 0;
         private int sodium = 0;
         private int carbohydrate = 0;
+
+        public NutritionFacts_BP build() {
+            return new NutritionFacts_BP(this);
+        }
 
         public Builder(int servingSize, int serving) {
             this.servingSize = servingSize;
@@ -43,10 +47,6 @@ public class NutritionFacts_BP {
         public Builder carbohydrate(int val) {
             carbohydrate = val;
             return this;
-        }
-
-        public NutritionFacts_BP build() {
-            return new NutritionFacts_BP(this);
         }
     }
     private NutritionFacts_BP(Builder builder){

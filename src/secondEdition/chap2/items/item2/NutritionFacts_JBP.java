@@ -1,4 +1,4 @@
-package secondEditio.items.chap2.item2;
+package secondEdition.chap2.items.item2;
 
 public class NutritionFacts_JBP {
     //From item 2 - Java Bean Pattern
