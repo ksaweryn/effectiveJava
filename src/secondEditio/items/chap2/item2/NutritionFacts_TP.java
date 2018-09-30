@@ -38,6 +38,8 @@ public class NutritionFacts_TP {
     public static void main(String[] args) {
         NutritionFacts_TP cocaCola = new NutritionFacts_TP(240, 8, 100, 0,35, 27);
         System.out.println(cocaCola);
+        NutritionFacts_TP water = new NutritionFacts_TP(0, 0);
+        System.out.println(water);
     }
 
     @Override
